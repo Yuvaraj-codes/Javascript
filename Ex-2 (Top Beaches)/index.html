@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Beaches</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 60%;
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        button {
+            width: 150px;
+            height: 36px;
+            font-size: 16px;
+            background-color: rgb(6, 213, 255);
+            border-radius: 8px;
+            margin-top: 12px;
+            
+        }
+
+        button:hover{
+        background-color: orange;
+        cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            padding: 12px;
+            color: rgb(58, 58, 58);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Click the given Button below to see the Different Beaches</h1>
+    <div class="container">
+        <img src="assets/img/marina.jpg" alt="" width="800px" id="ch-img" />
+    </div>
+
+    <div class="container">
+        <button onclick="document.getElementById('ch-img').src='assets/img/marina.jpg'">
+            Marina
+        </button>
+
+        <button onclick="document.getElementById('ch-img').src='assets/img/eliots.jpg'">
+            Eliots
+        </button>
+
+        <button onclick="document.getElementById('ch-img').src='assets/img/kovalam.jpg'">
+            Kovalam
+        </button>
+        <button onclick="document.getElementById('ch-img').src='assets/img/thiruvanmiyur.jpg'">
+            Thiruvanmiyur
+        </button>
+
+        <button onclick="document.getElementById('ch-img').src='assets/img/kasimedu.jpg'">
+            Kasimedu
+        </button>
+    </div>
+</body>
+
+</html>
