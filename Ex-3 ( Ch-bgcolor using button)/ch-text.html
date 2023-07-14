@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the background color</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            width: 60%;
+            margin: 150px auto;
+            /* height: 200px; */
+            /* background-color: aqua; */
+            text-align: center;
+        }
+        button{
+            width: 120px;
+            height: 36px;
+            border-radius: 8px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: slateblue;
+            color:#fff;
+
+        }
+        h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body id="ch-bgcolor">
+    <div class="container">
+        <h1>Greetings</h1><br>
+        <div id="ch-text">
+
+        </div><br>
+        <button onclick="document.getElementById('ch-text').innerHTML='<h2>Vanakkam</h2>';" >
+            Tamil
+        </button>
+        <button onclick="document.getElementById('ch-text').innerHTML='<h2>Good Morning</h2>';">
+       English
+        </button>
+        <button onclick="document.getElementById('ch-text').innerHTML='<h2>Namaste</h2>'">
+         Hindi
+        </button>
+    </div>
+    
+    
+</body>
+</html>

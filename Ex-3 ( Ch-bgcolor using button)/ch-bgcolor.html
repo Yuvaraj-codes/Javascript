@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the background color</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 60%;
+            margin: 150px auto;
+            /* height: 200px; */
+            /* background-color: aqua; */
+            text-align: center;
+        }
+        button{
+            width: 120px;
+            height: 36px;
+            border-radius: 8px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: slateblue;
+            color:#fff;
+
+        }
+    </style>
+</head>
+<body id="ch-bgcolor" bgcolor="grey">
+    <div class="container">
+        <button onclick="document.getElementById('ch-bgcolor').bgColor='red';" >
+            Red
+        </button>
+        <button onclick="document.getElementById('ch-bgcolor').bgColor='blue';">
+         Blue
+        </button>
+        <button onclick="document.getElementById('ch-bgcolor').bgColor='orange'">
+           Orange
+        </button>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change the background color</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 60%;
+            margin: 150px auto;
+            /* height: 200px; */
+            /* background-color: aqua; */
+            text-align: center;
+        }
+
+        button {
+            width: 120px;
+            height: 36px;
+            border-radius: 8px;
+            
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: slateblue;
+            color: #fff;
+
+        }
+
+        table {
+            height: 60px;
+            width: 60%;
+            margin: 150px auto;
+
+            /* background-color: pink; */
+
+        }
+    </style>
+</head>
+
+<body id="ch-bgcolor" bgcolor="grey">
+
+
+    <table border="2" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>
+                Hotel Name
+
+            </th>
+            <th>
+                Menus
+
+            </th>
+            <th>
+                Product Img
+            </th>
+            <th>
+                Price Unit
+            </th>
+            <th>
+                Rating
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="3">
+                A2B
+            </th>
+            <th>
+                <button onclick='a2bDosa();'>Dosa</button>
+
+            </th>
+            <th id="a2b-dosa">
+    &nbsp;
+            </th>
+            <th id="a2b-dosa-price">
+
+            </th>
+            <th id="a2b-dosa-rating" >
+                
+            </th>
+        </tr>
+        <tr>
+     
+            <th>
+                <button onclick='a2bIdly();'>Idly</button>
+
+            </th>
+            <th id="a2b-Idly">
+    &nbsp;
+            </th>
+            <th id="a2b-Idly-price">
+
+            </th>
+            <th id="a2b-Idly-rating" >
+                
+            </th>
+        </tr>
+        <tr>
+     
+            <th>
+                <button onclick='a2bUtp();'>Uthappam</button>
+
+            </th>
+            <th id="a2b-utp">
+    &nbsp;
+            </th>
+            <th id="a2b-utp-price">
+
+            </th>
+            <th id="a2b-utp-rating" >
+                
+            </th>
+        </tr>
+        <tr>
+           
+            <th rowspan="3">
+                SS HYDERABAD
+            </th>
+            <th>
+                <button onclick='SSCb();'>Chicken Biryani</button>
+
+            </th>
+            <th id="SS-cb">
+    &nbsp;
+            </th>
+            <th id="SS-cb-price">
+
+            </th>
+            <th id="SS-cb-rating" >
+                
+            </th>
+        </tr>
+        <tr>
+     
+            <th>
+                <button onclick=' SSMb();'>Mutton Biriyani</button>
+
+            </th>
+            <th id="SS-mb">
+                &nbsp;
+                        </th>
+                        <th id="SS-mb-price">
+            
+                        </th>
+                        <th id="SS-mb-rating" >
+                            
+                        </th>
+        </tr>
+        <tr>
+     
+            <th>
+                <button onclick='SSfb();'>Bucket Biriyani</button>
+
+            </th>
+            <th id="SS-bb">
+                &nbsp;
+                        </th>
+                        <th id="SS-bb-price">
+            
+                        </th>
+                        <th id="SS-bb-rating" >
+                            
+                        </th>
+        </tr>
+        <!-- <tr>
+       
+        <th>
+            <button>
+                Idly
+            </button>
+        </th>
+        <th ><div> <img src="assets/img/idly.JPG" alt="" width="100px">
+            <p>Idly</p></div>
+           
+        </th>
+        <th>
+          Rs.100
+        </th>
+        <th>
+           5
+         </th>
+    </tr> -->
+
+
+    </table>
+  
+
+<script>
+function a2bDosa(){
+    document.getElementById('a2b-dosa').innerHTML='<div><img src="assets/img/dosa1.jpg" width="100px"><p>Dosa<p></div>';
+        document.getElementById('a2b-dosa-price').innerHTML='Rs.150';
+        document.getElementById('a2b-dosa-rating').innerHTML='5';
+}
+function a2bIdly(){
+    document.getElementById('a2b-Idly').innerHTML='<div><img src="assets/img/idly.jpg" width="100px"><p>Idly<p></div>';
+        document.getElementById('a2b-Idly-price').innerHTML='Rs.100';
+        document.getElementById('a2b-Idly-rating').innerHTML='5';
+}
+function a2bUtp()
+{
+    document.getElementById('a2b-utp').innerHTML='<div><img src="assets/img/uthappam.jpg" width="100px"><p>Uthappam<p></div>';
+        document.getElementById('a2b-utp-price').innerHTML='Rs.180';
+        document.getElementById('a2b-utp-rating').innerHTML='3';
+}
+function SSCb(){
+    document.getElementById('SS-cb').innerHTML='<div><img src="assets/img/cb.jpg" width="100px"><p>Chicken Biryani<p></div>';
+        document.getElementById('SS-cb-price').innerHTML='Rs.150';
+        document.getElementById('SS-cb-rating').innerHTML='5';
+}
+function SSMb(){
+    document.getElementById('SS-mb').innerHTML='<div><img src="assets/img/mb.jpg" width="100px"><p>Mutton Biryani<p></div>';
+        document.getElementById('SS-mb-price').innerHTML='Rs.100';
+        document.getElementById('SS-mb-rating').innerHTML='5';
+}
+function SSfb()
+{
+    document.getElementById('SS-bb').innerHTML='<div><img src="assets/img/bb.webp" width="100px"><p>Bucket Biryani<p></div>';
+        document.getElementById('SS-bb-price').innerHTML='Rs.180';
+        document.getElementById('SS-bb-rating').innerHTML='3';
+}
+</script>
+</body>
+
+</html>
