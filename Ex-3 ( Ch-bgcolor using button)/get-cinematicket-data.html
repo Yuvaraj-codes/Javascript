@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="mt-50">Cinema Ticket Booking</h1>
+    <div class="container">
+        <form action="">
+            <label for="" class="label-text">
+                Enter First Name:
+            </label>
+
+            <input type="text" placeholder="Enter firstname" maxlength="10" id="get-firstname" /> <br><br>
+
+            <label for="" class="label-text">
+
+                Enter Last Name:
+            </label>
+            <input type="text" placeholder="Enter lastname" maxlength="12" id="get-lastname" /><br><br>
+            <label for="" class="label-text">
+
+                Enter Movie Name:
+            </label>
+            <input type="text" placeholder="Enter Movie Name" maxlength="12" id="get-moviename" /><br><br>
+
+            <label for="" class="label-text">
+
+                Enter Age:
+            </label>
+            <input type="text" placeholder="Enter Age" maxlength="14" id="get-age" /><br><br>
+
+            <label for="" class="label-text">
+
+                Enter Date:
+            </label>
+            <input type="text" placeholder="Enter Date" maxlength="10" id="get-date" /><br><br>
+            
+            <label for="" class="label-text">
+
+                Enter Timing:
+            </label>
+            <input type="text" placeholder="Show Timing" maxlength="8" id="get-timing" /><br><br>
+            
+            <label for="" class="label-text">
+
+                Enter Seat:
+            </label>
+            <input type="text" placeholder="Class" maxlength="5" id="get-seat" /><br><br>
+            
+            <label for="" class="label-text">
+
+                Enter Tickets:
+            </label>
+            <input type="text" placeholder="No of Tickets" maxlength="10" id="get-tickets" /><br><br>
+
+            <input type="button" class="btn" onclick="details()" value="submit"><br><br>
+
+            <div id="show-data"></div>
+            
+
+
+        </form>
+    </div>
+    <script>
+        function details() {
+            alert('Please Book your Cinema');
+            var fname = document.getElementById('get-firstname').value;
+            var lname = document.getElementById('get-lastname').value;
+            var moviename = document.getElementById('get-moviename').value;
+            
+            var age = document.getElementById('get-age').value;
+            var date = document.getElementById('get-date').value;
+            var timing = document.getElementById('get-timing').value;
+            var seat = document.getElementById('get-seat').value;
+            var tickets = document.getElementById('get-tickets').value;
+
+
+            document.getElementById('show-data').innerHTML = 'Your Name: ' + fname + lname + '<br>' + 'Your age: ' + age + '<br>' + ' Your movie name: ' + moviename + '<br>'  + 'Your Date: ' + date + '<br>' + 'Your Timing: ' + timing + '<br>' + 'Your seat: ' +  seat + '<br>' + 'Tickets:' + tickets;
+         
+        }
+
+      
+    </script>
+
+</body>
+
+</html>
