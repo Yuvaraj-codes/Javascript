@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <label for="" class="label-text">
+                Enter First Name:
+            </label>
+
+            <input type="text" placeholder="Enter First name" maxlength="10" id="get-firstname" /> <br><br>
+
+            <label for="" class="label-text">
+
+                Enter Last Name:
+            </label>
+            <input type="text" placeholder="Enter Last name" maxlength="2" id="get-lastname" /><br><br>
+
+            <label for="" class="label-text">
+
+                Enter Age:
+            </label>
+            <input type="text" placeholder="Enter Age" maxlength="3" id="get-age" /><br><br>
+
+            <label for="" class="label-text">
+
+                Enter Qualification:
+            </label>
+            <input type="text" placeholder="Enter Qualification" maxlength="5" id="get-edu" /><br><br>
+
+            <input type="button" class="btn" onclick="details()" value="submit"><br><br>
+
+            <div id="show-data"></div>
+            <!-- <input type="button" class="btn" onclick="showlastname()" value="submit"> -->
+
+
+        </form>
+    </div>
+    <script>
+        function details() {
+            var fname = document.getElementById('get-firstname').value;
+            var lname = document.getElementById('get-lastname').value;
+            var age = document.getElementById('get-age').value;
+            var edu = document.getElementById('get-edu').value;
+
+
+            document.getElementById('show-data').innerHTML = 'Your Name: ' + fname + lname + '</br>' + 'Your age: ' +
+                age + '<br>' + 'Your Qualifications: ' + edu;
+            console.log('Hi I am ' + fname + ' ' + lname + ' ' + age + ' ' + edu);
+            alert('Hi I am ' + fname + ' ' + lname + ' ' + age + ' ' + edu);
+        }
+
+        // function showage(){
+        //     var x = document.getElementById('showage').value;
+        //     console.log(x);
+        // }
+
+        // function showlastname(){
+        //     var x = document.getElementById('get-lastname').value;
+        //     console.log(x);
+        // }
+    </script>
+
+</body>
+
+</html>
